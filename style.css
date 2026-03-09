@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, p {    /*Universell reset*/
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html{
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/tipsytt_header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(9, 0, 0, 0.866);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+/* ---|TEXT PROPERTIES|--- */
+h1{
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+h2{
+    color: #FBA116;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+h3{
+    border-radius: 5px;
+    color: #FBA116;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+p{
+    color: #ffffff;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+} 
+/* ---|TEXT PROPERTIES END|--- */
+/* ---|HEADER SECTION|--- */
+header{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.navbar{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_btns{
+    background-image: url(images/tavern_tavle2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: rgba(167, 0, 0, 0);
+    border: none;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 2rem;
+    width: 40vw;
+    aspect-ratio: 3;
+    color: #f8f8f8;
+}
+.navbar_btns:hover{
+    color: rgb(255, 247, 0);
+    background-color: #8154114f;
+    border-radius: 20px;
+}
+#navbar_text{
+    text-decoration: underline;
+}
+#logoimg{
+    width: 100vw;
+    max-width: 40%;
+    height: auto;
+}
+/* ---|HEADER END|--- */
+ /*---|MODAL|--- FOR MENY-BTN / RESERVE-BTN / KONTAKT-BTN*/
+.modal{  
+    display:none;
+    position:fixed;
+    z-index:1000;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.8);
+    justify-content:center;
+    align-items:center;
+}
+.modal_content{
+    background-color:#1a0e05;
+    border:3px solid #FBA116;
+    border-radius:10px;
+    padding:30px;
+    width:400px;
+    max-width:90%;
+    color:#FBA116;
+    font-family:"MedievalSharp", cursive;
+}
+.closeBtn{
+    float:right;
+    font-size:28px;
+    cursor:pointer;
+}
+.modal_content form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.modal_content input{
+    padding:8px;
+    border-radius:6px;
+    border:none;
+}
+/* ---|MODAL END|--- */
+/*---|HERO SECTION|---*/
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-boxes{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    
+}
+.hero-box1, .hero-box2{
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+#heroimg1, #heroimg2{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px rgba(253, 253, 253, 0.16) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_btns{
+    font-family: cursive;
+    border-radius: 10px;
+    color: white;
+    background-color: orangered;
+}
+#herotxt{
+    text-decoration: underline;
+}
+/* ---|HERO SECTION END|--- */
+/* ---|MAIN SECTION|--- */
+.main-section{
+    display: flex;
+    justify-content: center;
+}
+.dagensspesial-box{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+}
+#dagens_img{
+    width: 80%;
+    border-radius: 10px;
+}
+/* ---|MAIN SECTION END|--- */
+/* ---|FOOTER|--- */
+.about-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+}
+.aboutus-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    background-color: #00000090;
+    border-radius: 50px;
+    padding: 20px;
+}
+.contact-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.copyright-infobox, .signature-box, .footer-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* ---|FOOTER END|--- */

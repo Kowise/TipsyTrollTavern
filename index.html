@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/tipsytt_transparent_logo.png" type="image/x-icon">
+    <title>TipsyTrollTavern</title>
+</head>
+<body>
+<!-- //|HEADER START|// -->
+<header>
+         <img id="logoimg" src="images/tipsytt_transparent_logo.png" alt="TTT_logo">
+        <div class="navbar">
+            <button class="navbar_btns" id="menuBtn">Meny</button>
+            <button class="navbar_btns" id="reserveBtn">Reserver</button>
+        </div>
+</header>
+<!-- -|HEADER END|- -->
+ <!-- //|MAIN START|// -->
+<main>
+    <section class="hero-section">
+        <h2 id="herotxt">-Bli med på vårt neste eventyr!-</h2>
+        <div class="hero-boxes">
+            <div class="hero-box1">
+                <h3>Upcoming Event</h3>
+                <img id="heroimg1" src="images/ttt_heroimg_1.png" alt="heroimg1">
+            </div>
+            <div class="hero-box2">
+                <h3>Upcoming Event</h3>
+                <img id="heroimg2" src="images/ttt_heroimg_2.png" alt="heroimg2">
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <div class="dagensspesial-box">
+            <h3 id="dagens_txt">Dagens Spesial</h3>
+            <img id="dagens_img" src="images/Dagensrettimg_solidbg.png" alt="dagens-rett">
+        </div>
+    </section>
+</main>
+<!-- -|MAIN END|- -->
+ <!-- //|FOOTER START|// -->
+<footer>
+    <section class="about-section">
+        <div class="aboutus-box">
+            <h3>Om oss;</h3>
+            <p>Velkommen til -|Tipsy Troll Tavern|- et lunt samlingssted for eventyrere, spillere og tørste sjeler. Her serverer vi solid mat, godt brygg og historier som bare blir bedre etter et par krus. Enten du kommer rett fra en lang ferd, en spillkveld med venner, eller bare trenger et sted å slappe av, står dørene våre alltid åpne. Ta plass ved bordet, løft et krus – og pass deg litt for trollet bak disken. Han blir fort *tipsy*. 🍺🧌
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-section"> 
+        <div class="contact-form">
+            <button class="navbar_btns" id="kontaktBtn">Kontakt Oss</button>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="copyright-infobox">
+            <h3>COPYRIGHT</h3>
+            <p>copyright @grumbleTB</p>
+        </div>
+        <div class="signature-box">
+            <h4>SIGNATUREBOX</h4>
+            <p>Grumble Trollbrew</p>
+        </div>
+    </section>
+</footer>
+<!-- -|FOOTER END|- -->
+
+<!-- |Modal for meny| -->
+<div class="modal" id="menuModal">
+    <div class="modal_content">
+        <span class="closeBtn">&times;</span>
+        <h2>Meny</h2>
+        <br>
+        <h3>Mat;</h3>
+        <p>Troll Tunge - 240g</p>
+        <p>Grotte Burger - 180g</p>
+        <p>Magisk Potet - 120g</p>
+        <br>
+        <h3>Drikke;</h3>
+        <p>Troll Øl - 23g</p>
+        <p>Suttung's Mjød - 45g</p>
+        <p>Alvisk Vin - 67g</p>
+    </div>
+</div>
+<!-- |Modal for reserver| -->
+<div class="modal" id="reserveModal">
+    <div class="modal_content">
+        <span class="closeBtn">&times;</span>
+        <h2>Reserver Bord</h2>
+        <br>
+        <form>
+            <label>Navn</label>
+            <input type="text" required>
+
+            <label>eMail</label>
+            <input type="email" required>
+
+            <label>Gjester</label>
+            <input type="number" min="1" max="10">
+
+            <label>Dato</label>
+            <input type="date">
+            <br>
+            <button type="submit">Reserver</button>
+        </form>
+    </div>
+</div>
+<!-- |Modal for kontaktskjema| -->
+ <div class="modal" id="kontaktModal">
+    <div class="modal_content">
+        <span class="closeBtn">&times;</span>
+        <h2>Kontakt oss:</h2>
+        <form>
+            <label>Name</label>
+            <input type="text" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Melding</label>
+            <input type="text" name="melding" id="melding_id">
+
+            <button type="submit">Send (du vil få svar på eMail)</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
